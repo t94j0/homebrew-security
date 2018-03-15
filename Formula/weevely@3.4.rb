@@ -1,8 +1,10 @@
-class Weevely3 < Formula
+class WeevelyAT34 < Formula
   desc "Weaponized web shell"
   homepage "https://github.com/epinna/weevely3"
   url "https://github.com/epinna/weevely3/archive/v3.4.tar.gz"
   sha256 "86331c4c222dbc940bfdc8a12bfae0284ca369216e8f95ff136b6a1db99b0a33"
+
+  depends_on "python@2"
 
   # Python requirements.txt
   resource "PrettyTable" do
@@ -45,24 +47,15 @@ class Weevely3 < Formula
       end
     end
 
-    (bin/"weevely").write <<-EOS.undent
+    (bin/"weevely").write <<~EOS
     	#!/usr/bin/env bash
-	cd #{libexec} && PYTHONPATH=#{ENV["PYTHONPATH"]} python weevely.py "$@"
+  cd #{libexec} && PYTHONPATH=#{ENV["PYTHONPATH"]} python2 weevely.py "$@"
     EOS
 
     libexec.install Dir["*"]
   end
 
   test do
-    # `test do` will create, run in and delete a temporary directory.
-    #
-    # This test will fail and we won't accept that! For Homebrew/homebrew-core
-    # this will need to be a test that verifies the functionality of the
-    # software. Run the test with `brew test weevely3`. Options passed
-    # to `brew install` such as `--HEAD` also need to be provided to `brew test`.
-    #
-    # The installed folder is not in the path, so use the entire path to any
-    # executables being tested: `system "#{bin}/program", "do", "something"`.
-    system "false"
+    system "#{bin}/weevely generate password123 #{testpath}/agent.php"
   end
 end
