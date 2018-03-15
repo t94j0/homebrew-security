@@ -1,4 +1,4 @@
-class WeevelyAT35 < Formula
+class Weevely < Formula
   desc "Weaponized web shell"
   homepage "https://github.com/epinna/weevely3"
   url "https://github.com/epinna/weevely3/archive/v3.5.tar.gz"
@@ -56,6 +56,6 @@ class WeevelyAT35 < Formula
   end
 
   test do
-    system "#{bin}/weevely generate password123 #{testpath}/agent.php"
+    system "#{bin}/weevely", "generate", "password123", "#{testpath}/agent.php"
   end
 end
