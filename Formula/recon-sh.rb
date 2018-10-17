@@ -7,7 +7,7 @@ class ReconSh < Formula
   end
 
   # Need realpath binary
-  depends_on "coreutils" => :run
+  depends_on "coreutils"
 
   def install
     libexec.install Dir["*"]

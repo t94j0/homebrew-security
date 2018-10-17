@@ -72,9 +72,9 @@ class Patator < Formula
   # Dependencies
   depends_on "mysql" => :build
   depends_on "sqlcipher" => :build
-  depends_on "openldap" => :run
-  depends_on "freerdp" => :run
-  depends_on "ike-scan" => :run
+  depends_on "openldap"
+  depends_on "freerdp"
+  depends_on "ike-scan"
 
   def install
     ENV.prepend_create_path "PYTHONPATH", libexec/"vendor/lib/python2.7/site-packages"
