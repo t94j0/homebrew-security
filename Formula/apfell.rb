@@ -131,10 +131,11 @@ class Apfell < Formula
     sha256 "125840783289e7d12552b1e86ab692c37322e7a65b96a99e0ea86cca041b6779"
   end
 
-  resource "pycrypto" do
-    url "https://files.pythonhosted.org/packages/60/db/645aa9af249f059cc3a368b118de33889219e0362141e75d4eaf6f80f163/pycrypto-2.6.1.tar.gz"
-    sha256 "f2ce1e989b272cfcb677616763e0a2e7ec659effa67a88aa92b3a65528f60a3c"
+  resource "pycryptodome" do
+    url "https://files.pythonhosted.org/packages/c7/ff/1ca71a40eb69c89778396a30d399639d41473b09c36aff2b700d80dd94b9/pycryptodome-3.7.3.tar.gz"
+    sha256 "1a222250e43f3c659b4ebd5df3e11c2f112aab6aef58e38af55ef5678b9f0636"
   end
+
 
   def install
     ENV.prepend_create_path "PYTHONPATH", libexec/"vendor/lib/python3.7/site-packages"
