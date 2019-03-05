@@ -10,7 +10,7 @@ class Apfell < Formula
   # Needed for psycopg2 pg_config
   depends_on "postgresql" => :build
   depends_on "openssl"
-  depends_on "python" => "3.7"
+  depends_on "python3"
 
   resource "aiofiles" do
     url "https://files.pythonhosted.org/packages/94/c2/e3cb60c1b7d9478203d4514e2d33ea424ad9bb98e45b21d6225db93f25c9/aiofiles-0.4.0.tar.gz"
