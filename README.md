@@ -14,6 +14,7 @@ Have `brew` installed and run `brew install <formula>`
 | [git-fuck][git-fuck] | The command you use when you say the name of the project backwards | 
 | [git-hound][git-hound] | GitHound pinpoints exposed API keys on GitHub |
 | [recon.sh][recon-sh] | A toolset to track and organize output of reconnaissance tools |
+| [satellite] | Easy-to-use payload hosting |
 | [Weevely3][weevely]  | A webshell generator. Can add passwords and built in MySQL interpreter |
 
 
@@ -24,3 +25,4 @@ Have `brew` installed and run `brew install <formula>`
 [git-fuck]: https://github.com/t94j0/git-fuck
 [git-hound]: https://github.com/tillson/git-hound
 [recon-sh]: https://github.com/jobertabma/recon.sh
+[satellite]: https://github.com/t94j0/satellite
