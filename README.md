@@ -10,6 +10,7 @@ Have `brew` installed and run `brew install <formula>`
 |-----------|------------------------------------------------------------------------|
 | [AIRMASTER][airmaster] | Domain purchasing tool for red teams                      |
 | [BroSec][brosec] | An interactive reference tool to help security professionals utilize useful payloads and commands. | 
+| [DirSearch][dirsearch] | Directory buster |
 | [patator][patator] | A pretty good brute forcer |
 | [git-fuck][git-fuck] | The command you use when you say the name of the project backwards | 
 | [git-hound][git-hound] | GitHound pinpoints exposed API keys on GitHub |
@@ -26,3 +27,4 @@ Have `brew` installed and run `brew install <formula>`
 [git-hound]: https://github.com/tillson/git-hound
 [recon-sh]: https://github.com/jobertabma/recon.sh
 [satellite]: https://github.com/t94j0/satellite
+[dirsearch]: https://github.com/maurosoria/dirsearch
